@@ -17,10 +17,10 @@ provider "aws" {
 # Deploy an ec2 instance 
 resource "aws_instance" "my-ec2" {
   #Argument 
-  ami = "ami-02396cdd13e9a1257" 
+  ami = "ami-009c5f630e96948cb" 
   instance_type = "t3.micro"
-  key_name = "jan2023-keypair"
-  subnet_id = "subnet-09056e0d87f2a2f58"
+  key_name = "my-terraform-keypair"
+  subnet_id = "subnet-0dfff3abf219c7013"
    tags = { 
     Name = "my-ec2"
   }
